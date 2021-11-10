@@ -26,6 +26,7 @@ const NewExpense = (props) => {
   }
     return (
       <div className='new-expense'>
+        <h2>Expense Tracker App</h2>
         {!showingButton && <button onClick={showFormHandler}>Add Expense</button>}
         {showingButton && <Expenseform onCancel={cancelFormHandler} onSaveExpenseData={saveExpenseDataHandler} />}
       </div>
